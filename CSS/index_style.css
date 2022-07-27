@@ -100,11 +100,12 @@ nav {
     padding: 0 100px;
 }
 /*LOGO*/
-nav .logo {
+nav .logo a {
     color: #FF0000;
     font-size: 20px;
     font-weight: 200;
     letter-spacing: -1px;
+    text-decoration: none;
 }
 
 /*NAV BAR*/
