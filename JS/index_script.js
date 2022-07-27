@@ -1,3 +1,13 @@
+//SCROLL POSITION
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 //NAV BAR 
  //DECLARATION
  const menuBtn =document.querySelector(".menu-bar span");
@@ -28,6 +38,7 @@ bar.onclick = ()=>{
  //CONTACT US  MESSAGE SENDING IN GMAIL
 
  const btn = document.getElementById('button');
+ 
 
  document.getElementById('form')
   .addEventListener('submit', function(event) {
