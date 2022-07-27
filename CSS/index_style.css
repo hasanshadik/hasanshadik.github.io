@@ -10,6 +10,27 @@ body {
     background: rgb(30, 30, 30);
     overflow-x: hidden;
 }
+/*SCROLLING PROGRESS*/
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #000;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #000;
+}
+.progress-bar {
+  height: 8px;
+  background: salmon;
+  width: 0%;
+  border-radius: 5px;
+}
+
+  /*H3 BAR*/
 
 h3 {
     color: salmon;
@@ -712,7 +733,6 @@ h1 {
 }
 
 .top-head .icon a {
-    float: right;
     height: 30px;
     list-style-type: none;
     margin-top: 0;
