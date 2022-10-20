@@ -8,33 +8,6 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-//NAV BAR 
- //DECLARATION
- const menuBtn =document.querySelector(".menu-bar span");
- const cancelBtn =document.querySelector(".cancel");
- const bar =document.querySelector(".nav-bar");
-
-//NAV BAR LINK CLICK AND HIDE NAV BAR
-bar.onclick = ()=>{
-    bar.classList.add('deactive');
-    menuBtn.classList.remove("hide");
-    cancelBtn.classList.remove("show");
-}
- //MENUE ICON WORK
- menuBtn.onclick = ()=>{
-     bar.classList.add("active");
-     menuBtn.classList.add("hide");
-     cancelBtn.classList.add("show"); 
- }
-
- //CANCEL ICON WORK
- cancelBtn.onclick = ()=>{
-     bar.classList.remove("active");
-     menuBtn.classList.remove("hide");
-     cancelBtn.classList.remove("show");
-     cancelBtn.style.color = "#ff3d00";
- }
-
  //CONTACT US  MESSAGE SENDING IN GMAIL
 
  const btn = document.getElementById('button');
